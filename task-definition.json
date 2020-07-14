@@ -2,6 +2,7 @@
     "requiresCompatibilities": [
       "FARGATE"
     ],
+    "executionRoleArn": "arn:aws:iam::511913096939:role/ecsTaskExecutionRole",
     "containerDefinitions": [
       {
         "name": "angular-frontend",
