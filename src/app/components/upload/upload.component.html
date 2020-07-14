@@ -1,0 +1,23 @@
+<p class="hdr-upload">Upload File</p>
+
+<input
+  type="file"
+  #fileInput
+  (change)="onSelectedFile($event)"
+  class="input-file"
+/>
+<p *ngIf="uploadPercentage">{{ uploadPercentageText }}</p>
+<div class="alert alert-success" *ngIf="successUpload">
+  <strong>Success!</strong> Upload Succesful.
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="errorUpload">
+  {{ errorMessage }}
+</div>
+<button
+  type="button"
+  class="btn btn-primary btn-sm"
+  (click)="uploadFile(fileInput)"
+>
+  Upload
+</button>
+<a [routerLink]="['/scan', 60]">To Scan 60</a>

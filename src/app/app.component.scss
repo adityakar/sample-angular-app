@@ -1,0 +1,44 @@
+.main-container {
+  width: 1200px;
+  margin: 10px auto;
+
+  .company-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #386ec1;
+  }
+
+  h1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #386ec1;
+    margin: 15px 0;
+  }
+}
+
+.login-form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display: flex;
+  list-style: none;
+  li {
+    margin: 10px;
+  }
+}
+
+.align-right {
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    width: 100%;
+
+    h1 {
+      margin: 15px 5px;
+    }
+  }
+}

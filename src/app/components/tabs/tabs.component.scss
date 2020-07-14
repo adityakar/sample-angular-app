@@ -1,0 +1,16 @@
+.nav-tabs {
+  border-bottom: none;
+  .nav-link {
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    padding: 7px 14px;
+    margin: 1px;
+    color: #000;
+    background: #eaeaea;
+    font-size: 12px;
+
+    &.active {
+      background-color: #fff;
+    }
+  }
+}

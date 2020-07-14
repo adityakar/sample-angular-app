@@ -1,0 +1,54 @@
+<div class="main-container">
+  <!-- <app-tabs></app-tabs> -->
+  <!-- <nav>
+    <ul class="nav-bar">
+      <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+      <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+      <li><a routerLink="/upload" routerLinkActive="active">Upload</a></li>
+    </ul>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Demo Company</a>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a routerLink="/upload" class="nav-link" routerLinkActive="active"
+            >Upload</a
+          >
+        </li>
+        <li class="nav-item">
+          <a routerLink="/login" class="nav-link" routerLinkActive="active"
+            >Login(cognito)</a
+          >
+        </li>
+        <li class="nav-item">
+          <a routerLink="/dashboard" class="nav-link" routerLinkActive="active"
+            >Dashboard</a
+          >
+        </li>
+      </ul>
+      <ul class="navbar-nav mr-auto align-right">
+        <li class="nav-item">
+          <a
+            *ngIf="!user"
+            class="nav-link"
+            (click)="onLoginOktaClick($event)"
+            href="#"
+            >Login(Okta)</a
+          >
+          <a class="nav-link" *ngIf="user">Welcome {{ user?.username }}</a>
+        </li>
+        <li class="nav-item" *ngIf="user">
+          <a class="nav-link" href="#" (click)="signOut($event)"
+            >Signout(Okta)</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- The routed views render in the <router-outlet>-->
+  <router-outlet></router-outlet>
+</div>
