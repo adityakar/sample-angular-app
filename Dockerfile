@@ -1,7 +1,7 @@
 
 FROM node:12.18.2 AS compile-image
 
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli@8.2.14
 
 WORKDIR /opt/ng
 
