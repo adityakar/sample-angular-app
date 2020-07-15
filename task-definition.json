@@ -6,7 +6,7 @@
     "containerDefinitions": [
       {
         "name": "angular-frontend",
-        "image": "511913096939.dkr.ecr.us-east-2.amazonaws.com/angular-frontend:latest",
+        "image": "",
         "memory": 256,
         "cpu": 256,
         "essential": true,
