@@ -53,6 +53,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: angular-frontend-service
-        cluster: frontend
+        service: sample-frontend-service
+        cluster: SampleFrontendECS
         wait-for-service-stability: true
